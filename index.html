@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classroom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .main {
+            width: 100%;
+            height: 66px;
+            /* border: 1px solid red; */
+            display: flex;
+            border-bottom: 1px gray solid;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .main-1 {
+            display: flex;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 70px;
+            padding: 15px;
+            text-align: justify;
+            /* border: 1px solid red; */
+        }
+
+        .main-1:hover {
+            background-color: rgb(195, 186, 186);
+        }
+
+        .main-2 {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            width: 300px;
+            height: 4rem;
+            /* border: 1px solid red; */
+        }
+
+        .main-2 img {
+            width: 30px;
+            height: 30px;
+            margin-top: 10px;
+            text-align: center;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 0px;
+        }
+
+        .main-2 span {
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+            font-family: 'Roboto', sans-serif;
+            justify-content: center;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            font-size: 25px;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
+        .main-2 span:hover {
+            color: green;
+            text-decoration: underline green;
+        }
+
+        .main-3 {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+
+        .main-3-icon {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+
+        .icon-1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 50px;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid red; */
+        }
+
+        .icon-1:hover {
+            background-color: rgb(195, 186, 186);
+        }
+
+        .icon-1 .pic {
+            background-image: url(https://media.istockphoto.com/id/476129138/photo/medina-saudi-arabia.jpg?s=612x612&w=0&k=20&c=R9kCjenzwx-2J_MKErd-skqlwXYr03bgLkFWfOhLFzU=);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50px;
+            width: 80%;
+            height: 80%;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            gap: 10px;
+            width: 100%;
+            height: 700px;
+            border-right: 1px solid gray;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            column-gap: 20px;
+            width: 100%;
+            height: 100px;
+            border-bottom: 1px solid gray;
+        }
+
+        .left-1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 5px;
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 50px;
+            gap: 20px;
+            width: 80%;
+            height: 35px;
+
+        }
+
+        .left-1:hover {
+            background-color: rgba(54, 104, 212, 0.61);
+        }
+
+        .icon-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            width: 20%;
+            height: 30px;
+
+        }
+
+        .Home {
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .list-2 {
+            display: flex;
+            flex-direction: column;
+            column-gap: 20px;
+            width: 100%;
+            height: 200px;
+            border-bottom: 1px solid gray;
+            /* width: 90%;
+            height: 200px; */
+            /* border: 1px solid red; */
+        }
+
+        .icon-3 {
+            color: aliceblue;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            margin-left: 15px;
+            border-radius: 70px;
+            padding: 15px;
+            text-align: justify;
+        }
+
+        .left-2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 10px;
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 50px;
+            gap: 20px;
+            width: 80%;
+            height: 40px;
+        }
+
+        .left-2:hover {
+            background-color: rgba(54, 104, 212, 0.61);
+        }
+
+        .left-2 .Home {
+            font-size: 12px;
+        }
+
+        .icon-4 {
+            color: aliceblue;
+            background-color: rgb(17, 178, 252);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            margin-left: 15px;
+            border-radius: 70px;
+            padding: 15px;
+            text-align: justify;
+        }
+
+        .list-3 {
+            display: flex;
+            flex-direction: column;
+            column-gap: 20px;
+            width: 100%;
+            height: 200px;
+        }
+
+        .left-main {
+            display: flex;
+            flex-direction: row;
+            width: 20%;
+            height: 800px;
+        }
+
+        .container-main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 1000px;
+            /* border: red solid 1px; */
+        }
+
+        .left-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 800px;
+            /* border: red solid 1px; */
+        }
+
+        .right-main {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            row-gap: 40px;
+            width: 80%;
+            height: 400px;
+            /* border: red solid 1px; */
+        }
+
+        .right1 {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            border-radius: 10px;
+            width: 18.75rem;
+            height: 18.375rem;
+            border: gray solid 1px;
+        }
+        .right1:hover{
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 2px 6px 2px rgba(60,64,67,.15);
+        }
+
+        .head {
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 300px;
+            height: 100px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-image: url(https://marketplace.canva.com/EAE5PH988H4/1/0/1600w/canva-purple-and-brown-creative-classroom-banner-MY3yi9PZCPM.jpg);
+            background-position: center;
+            background-size: cover;
+            /* border: red solid 1px; */
+        }
+
+        .head-text-1 {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            margin-left: 10px;
+            color: rgb(255, 255, 255);
+            font-size: 1.25em;
+        }
+
+        .head-text-2 {
+            margin-left: 10px;
+            color: rgb(255, 255, 255);
+            font-size: 1em;
+        }
+
+        .right-2 {
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            height: 130px;
+            /* border: red solid 1px; */
+        }
+
+        .rizwan {
+            width: 60px;
+            height: 60px;
+            margin-left: 225px;
+            margin-top: 70px;
+            background-image: url(https://lh3.googleusercontent.com/a-/ALV-UjVdUBLPlJmTC5lrpptV3CkjsCEt1Q3VM_VSDwJogNr3-Mw=s75-c);
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            /* border: red solid 1px; */
+        }
+
+        .right-3 {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            border-top: 1px solid gray;
+            /* border: red solid 1px; */
+        }
+
+        .right-3-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 20px;
+            /* border: red solid 1px; */
+        }
+        .right-3-icon:hover{
+            background-color: rgb(195, 186, 186);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="main">
+            <div class="main-1"><i class="fa-solid fa-bars"></i></div>
+            <div class="main-2">
+                <img src="image/download-removebg-preview.png" alt="">
+                <span>Classroom</span>
+            </div>
+            <div class="main-3">
+                <div class="main-3-icon">
+                    <div class="icon-1"><i class="fa-solid fa-plus"></i></div>
+                    <div class="icon-1"><i class="fa-solid fa-braille"></i></div>
+                    <div class="icon-1">
+                        <div class="pic"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-container">
+            <div class="left-main">
+                <div class="left">
+                    <div class="list">
+                        <div class="left-1">
+                            <div class="icon-2"><i class="fa-solid fa-house"></i></div>
+                            <div class="Home">Home</div>
+                        </div>
+                        <div class="left-1">
+                            <div class="icon-2"><i class="fa-solid fa-calendar-days"></i></div>
+                            <div class="Home">Clender</div>
+                        </div>
+                    </div>
+                    <div class="list-2">
+                        <div class="left-1">
+                            <div class="icon-2"><svg focusable="false" width="24" height="24" viewBox="0 0 24 24"
+                                    class=" NMm5M">
+                                    <path
+                                        d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z">
+                                    </path>
+                                </svg></div>
+                            <div class="Home">
+                                Enrolled</div>
+                        </div>
+                        <div class="left-1">
+                            <div class="icon-2"><svg enable-background="new 0 0 24 24" focusable="false" height="24"
+                                    viewBox="0 0 24 24" width="24" class=" NMm5M">
+                                    <g>
+                                        <rect fill="none" height="24" width="24"></rect>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M20,3H4C2.9,3,2,3.9,2,5v14c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V5 C22,3.9,21.1,3,20,3z M20,19H4V5h16V19z"
+                                                fill-rule="evenodd"></path>
+                                            <polygon fill-rule="evenodd"
+                                                points="19.41,10.42 17.99,9 14.82,12.17 13.41,10.75 12,12.16 14.82,15">
+                                            </polygon>
+                                            <rect fill-rule="evenodd" height="2" width="5" x="5" y="7"></rect>
+                                            <rect fill-rule="evenodd" height="2" width="5" x="5" y="11"></rect>
+                                            <rect fill-rule="evenodd" height="2" width="5" x="5" y="15"></rect>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                            <div class="Home">To-do</div>
+
+                        </div>
+                        <div class="left-2">
+                            <div class="icon-3">W</div>
+                            <div class="Home">Web &amp; App Development...<br>Batch 11 Sec - J</div>
+                        </div>
+                        <div class="left-2">
+                            <div class="icon-4">C</div>
+                            <div class="Home">CCO<br>Batch 16</div>
+                        </div>
+
+                    </div>
+                    <div class="list-3">
+                        <div class="left-1">
+                            <div class="icon-2"><svg focusable="false" width="24" height="24" viewBox="0 0 24 24"
+                                    class=" NMm5M">
+                                    <path
+                                        d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM6.24 5h11.52l.83 1H5.42l.82-1zM5 19V8h14v11H5zm11-5.5l-4 4-4-4 1.41-1.41L11 13.67V10h2v3.67l1.59-1.59L16 13.5z">
+                                    </path>
+                                </svg></div>
+                            <div class="Home">
+                                Archived classes</div>
+                        </div>
+                        <div class="left-1">
+                            <div class="icon-2"><svg focusable="false" width="24" height="24" viewBox="0 0 24 24"
+                                    class=" NMm5M">
+                                    <path
+                                        d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z">
+                                    </path>
+                                    <circle cx="12" cy="12" r="3.5"></circle>
+                                </svg></div>
+                            <div class="Home">Settings</div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="right-main">
+                <div class="right1">
+                    <div class="head">
+                        <div class="head-text-1">
+                            <div class="head-text">Web & App Development</div>
+                            <div class="icon-1" class="white"><svg focusable="false" width="24" height="24"
+                                    viewBox="0 0 24 24" class=" NMm5M">
+                                    <path
+                                        d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                        <div class="head-text-2">Batch 11 Sec-j</div>
+                        <div class="head-text-2">Muhammad Rizwan Bhatti</div>
+                    </div>
+                    <div class="rizwan"></div>
+                    <div class="right-2">
+                    </div>
+                    <div class="right-3">
+                        <div class="right-3-icon">
+                            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M">
+                                <path
+                                    d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
+                                </path>
+                                <path
+                                    d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="right-3-icon">
+                            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M">
+                                <path
+                                    d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="right1">
+                    <div class="head">
+                        <div class="head-text-1">
+                            <div class="head-text">Web & App Development</div>
+                            <div class="icon-1" class="white"><svg focusable="false" width="24" height="24"
+                                    viewBox="0 0 24 24" class=" NMm5M">
+                                    <path
+                                        d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                        <div class="head-text-2">Batch 11 Sec-j</div>
+                        <div class="head-text-2">Muhammad Rizwan Bhatti</div>
+                    </div>
+                    <div class="rizwan"></div>
+                    <div class="right-2">
+                    </div>
+                    <div class="right-3">
+                        <div class="right-3-icon">
+                            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M">
+                                <path
+                                    d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
+                                </path>
+                                <path
+                                    d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="right-3-icon">
+                            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M">
+                                <path
+                                    d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
